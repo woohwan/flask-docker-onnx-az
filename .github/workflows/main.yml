@@ -37,7 +37,7 @@ jobs:
           rm -r RoBERTa-SequenceClassification
 
       - name: 도커 허브 로그인
-        uses: docker/login-aciton@v1
+        uses: docker/login-action@v1
         with:
           username: ${{ secrets.DOKCER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
